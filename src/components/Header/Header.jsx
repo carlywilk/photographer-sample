@@ -5,13 +5,6 @@ import "./Header.scss";
 export function Header() {
     return (
         <div className="header">
-            {/* <div className="header__title">
-                <div className="header__name">
-                    <h1 className="header__first-name">Ella</h1>
-                    <h1 className="header__last-name">Parker</h1>
-                </div>
-                <h1 className="header__job">Photography</h1>
-            </div> */}
             <h1 className="header__title">Ella Parker Photography</h1>
             <nav className="header__nav">
                 <Link className="header__link" to="/">
