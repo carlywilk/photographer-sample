@@ -1,4 +1,24 @@
+@use "./breakpoints" as *;
+
 * {
     margin: 0;
     box-sizing: border-box;
+    font-weight: normal;
+
+
+    border: 1px dashed red;
+}
+
+body {
+    background-color: rgb(70, 70, 70);
+
+    margin: 1rem 0;
+
+    @include tablet_breakpoint {
+        margin: 1rem 0;
+    }
+
+    @include desktop_breakpoint {
+        margin: 2rem 0;
+    }
 }

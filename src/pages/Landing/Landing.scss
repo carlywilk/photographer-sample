@@ -1,13 +1,21 @@
-
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/typography" as *;
 
 .landing {
-    background-color: rgb(70, 70, 70);
-
     display: flex;
     flex-direction: column;
 
     &__title {
         align-self: center;
+        @include mobile-h3;
+
+        @include tablet_breakpoint {
+            @include tablet-h3;
+        }
+    
+        @include desktop_breakpoint {
+            @include desktop-h3;
+        }
     }
 
     &__image {

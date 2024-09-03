@@ -2,8 +2,6 @@
 @use "../../styles/partials/typography" as *;
 
 .header {
-    background-color: grey;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,15 +31,16 @@
     &__nav {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         text-transform: uppercase;
+        width: 90%;
 
         @include tablet_breakpoint {
-
+            width: 80%;
         }
     
         @include desktop_breakpoint {
             width: 50%;
-            justify-content: space-between;
         }
     }
 
@@ -59,14 +58,14 @@
     }
 
     &__button {
-        @include mobile-h2;
+        @include mobile-body;
 
         @include tablet_breakpoint {
-            @include tablet-h2;
+            @include tablet-body;
         }
     
         @include desktop_breakpoint {
-            @include desktop-h2;
+            @include desktop-body;
         }
     }
 }
