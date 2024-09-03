@@ -1,0 +1,15 @@
+@use "../../styles/partials/global" as *;
+
+.landing {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        align-self: center;
+    }
+
+    &__image {
+        width: 50%;
+        align-self: center;
+    }
+}
