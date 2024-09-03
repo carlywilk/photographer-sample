@@ -1,0 +1,122 @@
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/typography" as *;
+
+.header {
+    background-color: grey;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet_breakpoint {
+
+    }
+
+    @include desktop_breakpoint {
+
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        @include mobile-h1;
+
+        @include tablet_breakpoint {
+            @include tablet-h1;
+        }
+    
+        @include desktop_breakpoint {
+            @include desktop-h1;
+        }
+    }
+
+    // &__name {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     width: 100%;
+
+    //     @include tablet_breakpoint {
+
+    //     }
+    
+    //     @include desktop_breakpoint {
+            
+    //     }
+    // }
+
+    // &__first-name {
+    //     @include mobile-h1;
+
+    //     @include tablet_breakpoint {
+    //         @include tablet-h1;
+    //     }
+    
+    //     @include desktop_breakpoint {
+    //         @include desktop-h1;
+    //     }
+    // }
+
+    // &__last-name {
+    //     @include mobile-h1;
+
+    //     @include tablet_breakpoint {
+    //         @include tablet-h1;
+    //     }
+    
+    //     @include desktop_breakpoint {
+    //         @include desktop-h1;
+    //     }
+    // }
+
+    // &__job {
+    //     @include mobile-h1;
+
+    //     @include tablet_breakpoint {
+    //         @include tablet-h1;
+    //     }
+    
+    //     @include desktop_breakpoint {
+    //         @include desktop-h1;
+    //     }
+    // }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
+        @include tablet_breakpoint {
+
+        }
+    
+        @include desktop_breakpoint {
+            width: 50%;
+            justify-content: space-between;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+
+        @include tablet_breakpoint {
+
+        }
+    
+        @include desktop_breakpoint {
+            
+        }
+    }
+
+    &__button {
+        @include mobile-h2;
+
+        @include tablet_breakpoint {
+            @include tablet-h2;
+        }
+    
+        @include desktop_breakpoint {
+            @include desktop-h2;
+        }
+    }
+}
