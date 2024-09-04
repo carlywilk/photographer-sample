@@ -1,25 +1,6 @@
 @use "../../styles/partials/breakpoints" as *;
 @use "../../styles/partials/typography" as *;
 
-// .landing {
-//     display: flex;
-//     flex-direction: column;
-//     &__title {
-//         align-self: center;
-//         @include mobile-h3;
-//         @include tablet_breakpoint {
-//             @include tablet-h3;
-//         }
-//         @include desktop_breakpoint {
-//             @include desktop-h3;
-//         }
-//     }
-//     &__image {
-//         width: 50%;
-//         align-self: center;
-//     }
-// }
-
 .landing {
     // margin-top: 1rem;
     width: 100%;
@@ -75,8 +56,6 @@
     }
 
     &__box {
-        // background-color: grey;
-        // border: 1px dotted red;
         width: 30%;
         text-align: center;
     }
@@ -84,7 +63,6 @@
     &__image {
         width: 15rem;
         height: 100%;
-        // object-fit: cover;
         object-fit: contain;
 
         &--resized {

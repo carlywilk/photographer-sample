@@ -22,10 +22,10 @@ export function NavBox() {
                 </Link>
             </nav>
             <div className="navbox__socials">
-                <a className="navbox__link" href="https://www.instagram.com/">
+                <a className="navbox__link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                     <img className="navbox__icon" src={igIcon} alt="" />
                 </a>
-                <a className="navbox__link" href="https://www.linkedin.com/in/carly-wilk/">
+                <a className="navbox__link" href="https://www.linkedin.com/in/carly-wilk/" target="_blank" rel="noopener noreferrer">
                     <img className="navbox__icon" src={linkedInIcon} alt="" />
                 </a>
                 <a className="navbox__link" href={`mailto:carly.wilk.dev@gmail.com`}>
