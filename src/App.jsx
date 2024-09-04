@@ -14,7 +14,7 @@ import './App.scss';
 function App() {
   return (
     <BrowserRouter>
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path="/" element={<Landing/>} />
         <Route path="/about" element={<About />} />
