@@ -21,38 +21,41 @@
 // }
 
 .landing {
-    margin-top: 1rem;
+    // margin-top: 1rem;
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 
     @include tablet_breakpoint {
-        margin-top: 2rem;
+        // margin-top: 2rem;
         // width: 95%;
     }
 
     @include desktop_breakpoint {
-        margin-top: 4rem;
+        // margin-top: 4rem;
         // width: 85%;
     }
 
     &__row {
 
         &--upper {
-            margin: 0 auto 1rem;
+            // margin: 0 auto 1rem;
+            height: 42.5vh;
 
             @include tablet_breakpoint {
-                margin: 0 auto 2rem;
+                // margin: 0 auto 2rem;
             }
 
             @include desktop_breakpoint {
-                margin: 0 auto 4rem;
+                margin: 5vh auto;
             }
         }
 
         &--lower {
-            margin: 0 auto;
+            margin: 0 auto 5vh;
+            height: 42.5vh;
         }
 
         &--upper,
@@ -72,9 +75,22 @@
     }
 
     &__box {
-        background-color: grey;
-        border: 1px dotted red;
+        // background-color: grey;
+        // border: 1px dotted red;
         width: 30%;
         text-align: center;
+    }
+
+    &__image {
+        width: 15rem;
+        height: 100%;
+        // object-fit: cover;
+        object-fit: contain;
+
+        &--resized {
+            width: 15rem;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }

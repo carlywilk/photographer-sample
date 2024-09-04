@@ -3,6 +3,8 @@
 @use "../../styles/partials/typography" as *;
 
 .footer {
+    padding-top: 1rem;
+    // background-color: red;
 
     &__rights {
         @include mobile-body;
