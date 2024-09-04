@@ -5,6 +5,7 @@ import { Landing } from "./pages/Landing/Landing.jsx";
 import { About } from "./pages/About/About.jsx";
 import { Series } from "./pages/Series/Series.jsx";
 import { Contact } from "./pages/Contact/Contact.jsx";
+import { NotFound } from './pages/NotFound/NotFound.jsx';
 
 import './App.scss';
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/series" element={<Series />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
