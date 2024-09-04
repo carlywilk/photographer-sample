@@ -1,0 +1,19 @@
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/typography" as *;
+
+.footer {
+
+    &__rights {
+        @include mobile-body;
+        text-align: center;
+
+        @include tablet_breakpoint {
+            @include tablet-body;
+        }
+
+        @include desktop_breakpoint {
+            @include desktop-body;
+        }
+    }
+}
