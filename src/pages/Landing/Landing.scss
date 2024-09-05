@@ -7,36 +7,51 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-
+    align-items: center;
+    
     @include tablet_breakpoint {
+        flex-wrap: wrap;
         // margin-top: 2rem;
-        // width: 95%;
+        margin: 0 auto;
+        width: 95%;
     }
 
     @include desktop_breakpoint {
+        // margin: 0 auto;
         // margin-top: 4rem;
+        // margin: 0 auto;
         // width: 85%;
     }
 
     &__row {
-
+        
         &--upper {
-            // margin: 0 auto 1rem;
-            height: 42.5vh;
-
+            display: flex;
+            flex-direction: column;
+            
             @include tablet_breakpoint {
-                // margin: 0 auto 2rem;
+                margin: 5vh auto 2rem;
+                // display: block;
+                flex-direction: row;
+                height: 42.5vh;
             }
 
             @include desktop_breakpoint {
-                margin: 5vh auto;
+                // margin: 5vh auto;
             }
         }
 
         &--lower {
-            margin: 0 auto 5vh;
-            height: 42.5vh;
+            display: flex;
+            flex-direction: column;
+            
+            @include tablet_breakpoint {
+                // display: block;
+                margin: 0 auto 5vh;
+                flex-direction: row;
+                height: 42.5vh;
+            }
+
         }
 
         &--upper,
@@ -56,19 +71,38 @@
     }
 
     &__box {
-        width: 30%;
+        width: 100%;
         text-align: center;
+
+        @include tablet_breakpoint {
+            width: 30%;
+        }
+
+        @include desktop_breakpoint {
+
+        }
     }
 
     &__image {
-        width: 15rem;
-        height: 100%;
+        // width: 15rem;
+        // height: 100%;
         object-fit: contain;
 
         &--resized {
-            width: 15rem;
-            height: 100%;
-            object-fit: cover;
+            // width: 15rem;
+            // height: 100%;
+            width: 100%;
+            object-fit: contain;
+
+            @include tablet_breakpoint {
+                width: 12rem;
+                height: 100%;
+                object-fit: cover;
+            }
+    
+            @include desktop_breakpoint {
+                width: 15rem;
+            }
         }
     }
 }

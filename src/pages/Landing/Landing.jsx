@@ -17,7 +17,7 @@ export function Landing() {
                     <NavBox />
                 </div>
                 <div className="landing__box">
-                    <img className="landing__image" src={portraitsImage} alt=""/>
+                    <img className="landing__image--resized" src={portraitsImage} alt=""/>
                 </div>
                 <div className="landing__box">
                     <img className="landing__image--resized" src={natureImage} alt=""/>
@@ -31,7 +31,7 @@ export function Landing() {
                     <img className="landing__image--resized" src={ediblesImage} alt=""/>
                 </div>
                 <div className="landing__box">
-                    <img className="landing__image" src={architectureImage} alt=""/>
+                    <img className="landing__image--resized" src={architectureImage} alt=""/>
                 </div>
             </div>
         </div>
