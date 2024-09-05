@@ -1,4 +1,5 @@
 @use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/colors" as *;
 @use "../../styles/partials/typography" as *;
 
 .landing {
@@ -73,6 +74,8 @@
     &__box {
         // margin: 0 1rem;
         padding: 0 0.75rem;
+        position: relative;
+        overflow: hidden;
         width: 100%;
         text-align: center;
 
@@ -94,6 +97,9 @@
         width: 100%;
         object-fit: contain;
 
+        transition: opacity 0.3s ease;
+        // display: block;
+
         @include tablet_breakpoint {
             padding-bottom: 0;
             width: 12rem;
@@ -104,5 +110,37 @@
         @include desktop_breakpoint {
             width: 15rem;
         }
+
+        &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+
+    &__series-title {
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        // width: 100%;
+        // padding: 1rem;
+        // background: rgba(255, 255, 255, 0.7); // White transparent background
+        color: black; // Adjust color if needed
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+
+        @include tablet_breakpoint {
+            width: 12rem;
+        }
+
+        @include desktop-breakpoint {
+            width: 15rem;
+        }
+    }
+
+    &__box:hover .landing__series-title {
+        opacity: 1;
+        visibility: visible;
     }
 }

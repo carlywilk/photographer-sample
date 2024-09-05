@@ -9,7 +9,9 @@ import "./NavBox.scss";
 export function NavBox() {
     return (
         <div className="navbox">
-            <h1 className="navbox__title">Photographer</h1>
+            <Link className="navbox__link" to="/">
+                <h1 className="navbox__title">Photographer</h1>
+            </Link>
             <nav className="navbox__menu">
                 <Link className="navbox__link" to="/">
                     <p className="navbox__button">Home</p>
@@ -22,13 +24,13 @@ export function NavBox() {
                 </Link>
             </nav>
             <div className="navbox__socials">
-                <a className="navbox__link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <a className="navbox__link--animated" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                     <img className="navbox__icon" src={igIcon} alt="" />
                 </a>
-                <a className="navbox__link" href="https://www.linkedin.com/in/carly-wilk/" target="_blank" rel="noopener noreferrer">
+                <a className="navbox__link--animated" href="https://www.linkedin.com/in/carly-wilk/" target="_blank" rel="noopener noreferrer">
                     <img className="navbox__icon" src={linkedInIcon} alt="" />
                 </a>
-                <a className="navbox__link" href={`mailto:carly.wilk.dev@gmail.com`}>
+                <a className="navbox__link--animated" href={`mailto:carly.wilk.dev@gmail.com`}>
                     <img className="navbox__icon" src={emailIcon} alt="" />
                 </a>
             </div>

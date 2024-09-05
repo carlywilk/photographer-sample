@@ -1,4 +1,5 @@
 @use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/colors" as *;
 @use "../../styles/partials/typography" as *;
 
 .navbox {
@@ -34,6 +35,15 @@
 
     &__link {
         text-decoration: none;
+
+        &--animated {
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            
+            &:hover {
+                border-bottom: 2px solid $basic-black;
+            }
+        }
     }
 
     &__button {
@@ -49,31 +59,8 @@
             @include desktop-body;
         }
 
-        &:after,
-        &:before {
-            backface-visibility: hidden;
-            border: 1px solid rgba(#252323, 0);
-            bottom: 0px;
-            content: " ";
-            display: block;
-            margin: 0 auto;
-            position: relative;
-            transition: all 280ms ease-in-out;
-            width: 0;
-        }
-
-        &:hover:after,
-        &:hover:before {
-            backface-visibility: hidden;
-            border-color: #252323;
-            transition: width 350ms ease-in-out;
-            width: 1%;
-        }
-
-        &:hover:before {
-            bottom: auto;
-            top: 0;
-            width: 1%;
+        &:hover {
+            color: $dark-grey;
         }
     }
 
