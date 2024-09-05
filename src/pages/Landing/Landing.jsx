@@ -17,21 +17,21 @@ export function Landing() {
                     <NavBox />
                 </div>
                 <div className="landing__box">
-                    <img className="landing__image--resized" src={portraitsImage} alt=""/>
+                    <img className="landing__image" src={portraitsImage} alt=""/>
                 </div>
                 <div className="landing__box">
-                    <img className="landing__image--resized" src={natureImage} alt=""/>
+                    <img className="landing__image" src={natureImage} alt=""/>
                 </div>
             </div>
             <div className="landing__row--lower">
                 <div className="landing__box">
-                    <img className="landing__image--resized" src={concertsImage} alt=""/>
+                    <img className="landing__image" src={concertsImage} alt=""/>
                 </div>
                 <div className="landing__box">
-                    <img className="landing__image--resized" src={ediblesImage} alt=""/>
+                    <img className="landing__image" src={ediblesImage} alt=""/>
                 </div>
                 <div className="landing__box">
-                    <img className="landing__image--resized" src={architectureImage} alt=""/>
+                    <img className="landing__image" src={architectureImage} alt=""/>
                 </div>
             </div>
         </div>

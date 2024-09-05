@@ -71,11 +71,15 @@
     }
 
     &__box {
+        // margin: 0 1rem;
+        padding: 0 0.75rem;
         width: 100%;
         text-align: center;
 
         @include tablet_breakpoint {
-            width: 30%;
+            margin: 0;
+            padding: 0;
+            // width: 30%;
         }
 
         @include desktop_breakpoint {
@@ -86,23 +90,19 @@
     &__image {
         // width: 15rem;
         // height: 100%;
+        padding-bottom: 1rem;
+        width: 100%;
         object-fit: contain;
 
-        &--resized {
-            // width: 15rem;
-            // height: 100%;
-            width: 100%;
-            object-fit: contain;
+        @include tablet_breakpoint {
+            padding-bottom: 0;
+            width: 12rem;
+            height: 100%;
+            object-fit: cover;
+        }
 
-            @include tablet_breakpoint {
-                width: 12rem;
-                height: 100%;
-                object-fit: cover;
-            }
-    
-            @include desktop_breakpoint {
-                width: 15rem;
-            }
+        @include desktop_breakpoint {
+            width: 15rem;
         }
     }
 }

@@ -2,11 +2,15 @@
 @use "../../styles/partials/typography" as *;
 
 .navbox {
-
+    margin: 1rem 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+
+    @include tablet_breakpoint {
+        margin: 0;
+    }
 
     &__title {
         @include mobile-h1;
@@ -21,7 +25,11 @@
     }
 
     &__menu {
+        margin: 1rem 0;
 
+        @include tablet_breakpoint {
+            margin: 0;
+        }
     }
 
     &__link {
@@ -31,6 +39,7 @@
     &__button {
         margin: 0.5rem 0;
         @include mobile-body;
+        text-transform: uppercase;
         
         @include tablet_breakpoint {
             @include tablet-body;
@@ -74,6 +83,15 @@
     }
 
     &__icon {
-        height: 2rem;
+        // margin-top: 1rem;
+        height: 1.5rem;
+        
+        @include tablet_breakpoint {
+            // margin-top: 0;
+        }
+        
+        @include desktop_breakpoint {
+            height: 1.75rem;
+        }
     }
 }
