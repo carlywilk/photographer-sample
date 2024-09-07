@@ -13,6 +13,7 @@
     line-height: 2.25rem;
     font-weight: 700;
     color: $primary-black;
+    @content;
 }
 
 @mixin mobile-h2 {
@@ -20,6 +21,7 @@
     line-height: 1.875rem;
     font-weight: 700;
     color: $primary-black;
+    @content;
 }
 
 @mixin mobile-h3 {
@@ -27,6 +29,7 @@
     line-height: 1.6875rem;
     font-weight: 500;
     color: $primary-black;
+    @content;
 }
 
 @mixin mobile-body {
@@ -34,6 +37,7 @@
     line-height: 1.5rem;
     font-weight: 400;
     color: $primary-black;
+    @content;
 }
 
 @mixin tablet-h1 {
@@ -42,6 +46,7 @@
     line-height: 3rem;
     font-weight: 700;
     color: $primary-black;
+    @content;
 }
 
 @mixin tablet-h2 {
@@ -49,6 +54,7 @@
     line-height: 2.625rem;
     font-weight: 700;
     color: $primary-black;
+    @content;
 }
 
 @mixin tablet-h3 {
@@ -56,6 +62,7 @@
     line-height: 2.25rem;
     font-weight: 500;
     color: $primary-black;
+    @content;
 }
 
 @mixin tablet-body {
@@ -63,6 +70,7 @@
     line-height: 1.5rem;
     font-weight: 400;
     color: $primary-black;
+    @content;
 }
 
 @mixin desktop-h1 {
@@ -71,6 +79,7 @@
     line-height: 3.75rem;
     font-weight: 700;
     color: $primary-black;
+    @content;
 }
 
 @mixin desktop-h2 {
@@ -78,6 +87,7 @@
     line-height: 3.375rem;
     font-weight: 700;
     color: $primary-black;
+    @content;
 }
 
 @mixin desktop-h3 {
@@ -85,6 +95,7 @@
     line-height: 2.8125rem;
     font-weight: 500;
     color: $primary-black;
+    @content;
 }
 
 @mixin desktop-body {
@@ -92,4 +103,5 @@
     line-height: 1.6875rem;
     font-weight: 400;
     color: $primary-black;
+    @content;
 }

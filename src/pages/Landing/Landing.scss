@@ -102,17 +102,17 @@
 
         @include tablet_breakpoint {
             padding-bottom: 0;
-            width: 12rem;
+            width: 13rem;
             height: 100%;
             object-fit: cover;
         }
 
         @include desktop_breakpoint {
-            width: 15rem;
+            width: 17rem;
         }
 
         &:hover {
-            opacity: 0.5;
+            opacity: 0.2;
             cursor: pointer;
         }
     }
@@ -120,8 +120,9 @@
     &__series-title {
         position: absolute;
         bottom: 50%;
-        left: 0;
-        // width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
         // padding: 1rem;
         // background: rgba(255, 255, 255, 0.7); // White transparent background
         color: black; // Adjust color if needed
@@ -129,13 +130,17 @@
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s ease, visibility 0.3s ease;
+        @include mobile-h3;
+        text-transform: uppercase;
 
         @include tablet_breakpoint {
             width: 12rem;
+            @include tablet-h3;
         }
 
         @include desktop-breakpoint {
             width: 15rem;
+            @include desktop-h3;
         }
     }
 
